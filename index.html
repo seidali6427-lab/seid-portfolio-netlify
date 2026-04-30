@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seid Ali | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Seid<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"     class="nav-link active">Home</a></li>
+      <li><a href="#about"    class="nav-link">About</a></li>
+      <li><a href="#skills"   class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Seid Ali</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        A passionate junior front-end developer who loves turning ideas into
+        beautiful, interactive web experiences using HTML, CSS &amp; JavaScript.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-outline">Hire Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/seidali6427-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Real photo -->
+    <div class="hero-image">
+      <div class="avatar-wrapper">
+        <div class="avatar-circle">
+          <img src="photo1.png" alt="Seid Ali" class="hero-photo" />
+        </div>
+        <div class="floating-badge badge-1"><i class="fab fa-html5"></i> HTML</div>
+        <div class="floating-badge badge-2"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="floating-badge badge-3"><i class="fab fa-js"></i> JS</div>
+      </div>
+    </div>
+
+    <div class="scroll-down">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <p class="section-subtitle">Get to know me a little better</p>
+
+      <div class="about-top">
+        <div class="about-photo-wrap">
+          <img src="photo2.jpg" alt="Seid Ali" class="about-photo" />
+        </div>
+        <div class="about-text">
+          <h3>Who I Am</h3>
+          <p>
+            I'm <strong>Seid Ali</strong>, a junior front-end developer with a love for clean
+            code and pixel-perfect designs. I enjoy building websites that are both
+            functional and visually appealing.
+          </p>
+          <p>
+            I started learning web development out of curiosity and quickly fell in love
+            with it. Every project teaches me something new and pushes me to grow as a
+            developer. I love creating smooth animations, responsive layouts, and
+            user-friendly interfaces.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:20px;">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-code"></i></div>
+          <h3>Clean Code</h3>
+          <p>I write readable, well-structured code that's easy to maintain and scale.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Responsive</h3>
+          <p>Every project I build works beautifully on all screen sizes and devices.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Fast Learner</h3>
+          <p>I pick up new tools and technologies quickly and love exploring what's new.</p>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="100">0</span>
+          <span class="stat-label">Cups of Coffee ☕</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <p class="section-subtitle">Technologies I work with</p>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+          <h3>HTML5</h3>
+          <p>Semantic markup, accessibility, SEO-friendly structure</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, animations, responsive design</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon js"><i class="fab fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, events, fetch API, ES6+</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+          <span class="skill-percent">70%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon git"><i class="fab fa-git-alt"></i></div>
+          <h3>Git & GitHub</h3>
+          <p>Version control, branching, pull requests</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+          <span class="skill-percent">65%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon responsive"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first approach, media queries, cross-browser</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+          <span class="skill-percent">78%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <p class="section-subtitle">Things I've built so far</p>
+
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="clone">Clone</button>
+        <button class="filter-btn" data-filter="personal">Personal</button>
+        <button class="filter-btn" data-filter="fun">Fun</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Apple Website -->
+        <div class="project-card" data-category="clone">
+          <div class="project-img apple-img">
+            <div class="proj-cover">
+              <div class="proj-icon-wrap">
+                <i class="fab fa-apple"></i>
+              </div>
+              <div class="proj-lines">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="proj-dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Clone</span>
+            <h3>Apple Website Clone</h3>
+            <p>A recreation of Apple's homepage with smooth scroll animations, product showcases, and a clean minimal design.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://seid-portfolio-1.netlify.app" class="project-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="https://github.com/seidali6427-lab" target="_blank" aria-label="GitHub" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Puppy Page -->
+        <div class="project-card" data-category="fun">
+          <div class="project-img puppy-img">
+            <div class="proj-cover">
+              <div class="proj-icon-wrap puppy">
+                <i class="fas fa-dog"></i>
+              </div>
+              <div class="paw-prints">
+                <span>🐾</span><span>🐾</span><span>🐾</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Fun</span>
+            <h3>Puppy Page</h3>
+            <p>An adorable puppy-themed webpage with cute cards, a gallery, and fun hover effects that dog lovers will enjoy.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://seid-portfolio-1.netlify.app" class="project-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="https://github.com/seidali6427-lab" target="_blank" aria-label="GitHub" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Portfolio -->
+        <div class="project-card" data-category="personal">
+          <div class="project-img portfolio-img">
+            <div class="proj-cover">
+              <div class="proj-icon-wrap port">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <div class="port-bars">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Personal</span>
+            <h3>Personal Portfolio</h3>
+            <p>My first portfolio website showcasing my skills and projects. Built with a focus on clean layout and smooth UX.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://seid-portfolio-1.netlify.app" class="project-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="https://github.com/seidali6427-lab" target="_blank" aria-label="GitHub" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nunu Cafe -->
+        <div class="project-card" data-category="clone">
+          <div class="project-img cafe-img">
+            <div class="proj-cover">
+              <div class="proj-icon-wrap cafe">
+                <i class="fas fa-mug-hot"></i>
+              </div>
+              <div class="steam">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Clone</span>
+            <h3>Nunu Cafe</h3>
+            <p>A cozy cafe website with a menu section, reservation form, and warm earthy tones that match the cafe vibe.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://seid-portfolio-1.netlify.app" class="project-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="https://github.com/seidali6427-lab" target="_blank" aria-label="GitHub" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Restaurant Project -->
+        <div class="project-card" data-category="fun">
+          <div class="project-img restaurant-img">
+            <div class="proj-cover">
+              <div class="proj-icon-wrap resto">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <div class="resto-decor">
+                <span>🍽️</span><span>🥗</span><span>🍷</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Fun</span>
+            <h3>Restaurant Website</h3>
+            <p>A modern restaurant landing page with an interactive menu, reservation section, gallery, and smooth scroll animations.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://seid-portfolio-1.netlify.app" class="project-btn"><i class="fas fa-eye"></i> Live</a>
+              <a href="https://github.com/seidali6427-lab" target="_blank" aria-label="GitHub" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <p class="section-subtitle">I'd love to hear from you!</p>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Let's work together 🚀</h3>
+          <p>
+            I'm currently open to freelance projects and junior developer
+            opportunities. Feel free to reach out — I'll get back to you
+            as soon as possible!
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>seidali6427@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Addis Ababa, Ethiopia</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+251 948 66 73 71</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/seidali6427-lab" target="_blank" aria-label="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text"  id="name"    placeholder="Your Name"    required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email"   placeholder="Your Email"   required />
+          </div>
+          <div class="form-group">
+            <input type="text"  id="subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5"  placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-success" id="formSuccess">
+            ✅ Message sent! I'll get back to you soon.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Built with ❤️ by <span>Seid Ali</span></p>
+      <p class="footer-sub">© 2025 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
