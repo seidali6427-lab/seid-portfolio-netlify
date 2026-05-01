@@ -698,151 +698,25 @@ img {
   overflow: hidden;
 }
 
+.project-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-cover-img {
+  transform: scale(1.07);
+}
+
 /* Individual project backgrounds */
 .apple-img      { background: linear-gradient(135deg, #1c1c1e 0%, #2c2c2e 100%); }
 .puppy-img      { background: linear-gradient(135deg, #f9a825 0%, #f57f17 100%); }
 .portfolio-img  { background: linear-gradient(135deg, #6c63ff 0%, #3f3d56 100%); }
 .cafe-img       { background: linear-gradient(135deg, #5d4037 0%, #8d6e63 100%); }
 .restaurant-img { background: linear-gradient(135deg, #b71c1c 0%, #e53935 100%); }
-
-/* Cover layout */
-.proj-cover {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.proj-icon-wrap {
-  width: 72px;
-  height: 72px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(6px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.2rem;
-  color: #fff;
-  z-index: 2;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover .proj-icon-wrap {
-  transform: scale(1.1) rotate(-4deg);
-}
-
-/* Apple decorative lines */
-.proj-lines {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.proj-lines span {
-  display: block;
-  height: 3px;
-  border-radius: 2px;
-  background: rgba(255,255,255,0.2);
-}
-.proj-lines span:nth-child(1) { width: 50px; }
-.proj-lines span:nth-child(2) { width: 35px; }
-.proj-lines span:nth-child(3) { width: 42px; }
-
-/* Apple dots */
-.proj-dots {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  display: flex;
-  gap: 6px;
-}
-.proj-dots span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.25);
-}
-
-/* Puppy paw prints */
-.paw-prints {
-  position: absolute;
-  bottom: 12px;
-  right: 16px;
-  display: flex;
-  gap: 6px;
-  font-size: 1.1rem;
-  opacity: 0.6;
-}
-
-/* Portfolio bars */
-.port-bars {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  display: flex;
-  align-items: flex-end;
-  gap: 6px;
-}
-.port-bars span {
-  display: block;
-  width: 10px;
-  border-radius: 3px 3px 0 0;
-  background: rgba(255,255,255,0.25);
-}
-.port-bars span:nth-child(1) { height: 20px; }
-.port-bars span:nth-child(2) { height: 35px; }
-.port-bars span:nth-child(3) { height: 28px; }
-.port-bars span:nth-child(4) { height: 42px; }
-
-/* Cafe steam */
-.steam {
-  position: absolute;
-  bottom: 14px;
-  right: 20px;
-  display: flex;
-  gap: 8px;
-  align-items: flex-end;
-}
-.steam span {
-  display: block;
-  width: 4px;
-  border-radius: 2px;
-  background: rgba(255,255,255,0.3);
-  animation: steamRise 2s ease-in-out infinite;
-}
-.steam span:nth-child(1) { height: 18px; animation-delay: 0s; }
-.steam span:nth-child(2) { height: 26px; animation-delay: 0.4s; }
-.steam span:nth-child(3) { height: 20px; animation-delay: 0.8s; }
-
-@keyframes steamRise {
-  0%, 100% { transform: scaleY(1); opacity: 0.3; }
-  50%       { transform: scaleY(1.3); opacity: 0.7; }
-}
-
-/* Restaurant decor */
-.resto-decor {
-  position: absolute;
-  bottom: 12px;
-  right: 14px;
-  display: flex;
-  gap: 6px;
-  font-size: 1.2rem;
-  opacity: 0.7;
-}
-
-/* Icon color overrides */
-.proj-icon-wrap.puppy  { background: rgba(255,255,255,0.2); }
-.proj-icon-wrap.port   { background: rgba(255,255,255,0.15); }
-.proj-icon-wrap.cafe   { background: rgba(255,255,255,0.15); }
-.proj-icon-wrap.resto  { background: rgba(255,255,255,0.15); }
 
 .project-info {
   padding: 20px;
