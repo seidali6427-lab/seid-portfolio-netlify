@@ -124,8 +124,21 @@ img {
 
 .btn-outline:hover {
   background: var(--primary);
-  color: var(--white);
+  color: var(--dark);
   transform: translateY(-2px);
+}
+
+.btn-cv {
+  background: transparent;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-cv:hover {
+  background: var(--secondary);
+  color: var(--dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(103, 232, 249, 0.3);
 }
 
 .btn-full {
@@ -840,6 +853,16 @@ img {
   gap: 14px;
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+.contact-item a {
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.contact-item a:hover {
+  color: var(--secondary);
+  text-decoration: underline;
 }
 
 .contact-item i {
