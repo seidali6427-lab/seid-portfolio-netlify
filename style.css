@@ -6,18 +6,18 @@
 }
 
 :root {
-  --primary: #6c63ff;
-  --primary-dark: #5a52d5;
-  --secondary: #f9a825;
-  --dark: #0f0f1a;
-  --dark-2: #1a1a2e;
-  --dark-3: #16213e;
-  --text: #e0e0e0;
-  --text-muted: #9e9e9e;
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+  --secondary: #67e8f9;
+  --dark: #0F172A;
+  --dark-2: #1E293B;
+  --dark-3: #0F172A;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
   --white: #ffffff;
-  --card-bg: #1e1e30;
-  --border: rgba(108, 99, 255, 0.2);
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --card-bg: #1E293B;
+  --border: rgba(56, 189, 248, 0.18);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   --radius: 16px;
   --transition: all 0.3s ease;
 }
@@ -113,7 +113,7 @@ img {
   background: var(--primary-dark);
   border-color: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.35);
 }
 
 .btn-outline {
@@ -148,10 +148,10 @@ img {
 }
 
 .navbar.scrolled {
-  background: rgba(15, 15, 26, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(15, 23, 42, 0.96);
+  backdrop-filter: blur(12px);
   padding: 12px 40px;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
 
 .nav-logo {
@@ -234,9 +234,11 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 100px 80px 60px;
-  background: radial-gradient(ellipse at top left, rgba(108,99,255,0.15) 0%, transparent 60%),
-              radial-gradient(ellipse at bottom right, rgba(249,168,37,0.08) 0%, transparent 60%),
-              var(--dark);
+  background:
+    radial-gradient(ellipse at top left, rgba(56,189,248,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, rgba(103,232,249,0.07) 0%, transparent 55%),
+    linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(30,41,59,0.88) 100%),
+    url('photo1.png') center center / cover no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -244,9 +246,9 @@ img {
 .hero::before {
   content: '';
   position: absolute;
-  width: 400px;
-  height: 400px;
-  background: rgba(108, 99, 255, 0.05);
+  width: 420px;
+  height: 420px;
+  background: rgba(56, 189, 248, 0.06);
   border-radius: 50%;
   top: -100px;
   right: -100px;
@@ -352,12 +354,12 @@ img {
   height: 280px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--dark-2), var(--dark-3));
-  border: 3px solid rgba(108, 99, 255, 0.3);
+  border: 3px solid rgba(56, 189, 248, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 7rem;
-  box-shadow: 0 0 60px rgba(108, 99, 255, 0.2);
+  box-shadow: 0 0 60px rgba(56, 189, 248, 0.2);
   overflow: hidden;
 }
 
@@ -491,13 +493,13 @@ img {
 .about-card:hover {
   transform: translateY(-6px);
   border-color: var(--primary);
-  box-shadow: 0 12px 40px rgba(108, 99, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(56, 189, 248, 0.15);
 }
 
 .about-icon {
   width: 60px;
   height: 60px;
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(56, 189, 248, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -575,7 +577,7 @@ img {
 .skill-card:hover {
   transform: translateY(-4px);
   border-color: var(--primary);
-  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.15);
 }
 
 .skill-icon {
@@ -594,7 +596,7 @@ img {
 .skill-icon.js   { background: rgba(247, 223, 30, 0.15); color: #f7df1e; }
 .skill-icon.git  { background: rgba(240, 80, 50, 0.15); color: #f05032; }
 .skill-icon.figma { background: rgba(162, 89, 255, 0.15); color: #a259ff; }
-.skill-icon.responsive { background: rgba(108, 99, 255, 0.15); color: var(--primary); }
+.skill-icon.responsive { background: rgba(56, 189, 248, 0.15); color: var(--primary); }
 
 .skill-card h3 {
   font-size: 1rem;
@@ -625,7 +627,6 @@ img {
   width: 0;
   transition: width 1.2s ease;
 }
-
 .skill-percent {
   font-size: 0.8rem;
   color: var(--primary);
@@ -853,7 +854,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--primary);
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(56, 189, 248, 0.1);
   padding: 3px 10px;
   border-radius: 50px;
   display: inline-block;
@@ -970,7 +971,7 @@ img {
 .contact-item i {
   width: 38px;
   height: 38px;
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(56, 189, 248, 0.1);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -1038,7 +1039,7 @@ img {
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--primary);
-  background: rgba(108, 99, 255, 0.05);
+  background: rgba(56, 189, 248, 0.05);
 }
 
 .form-group label {
@@ -1095,7 +1096,7 @@ img {
   width: 44px;
   height: 44px;
   background: var(--primary);
-  color: var(--white);
+  color: var(--dark);
   border: none;
   border-radius: 50%;
   font-size: 1rem;
@@ -1106,7 +1107,7 @@ img {
   opacity: 0;
   pointer-events: none;
   transition: var(--transition);
-  box-shadow: 0 4px 16px rgba(108, 99, 255, 0.4);
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.4);
   z-index: 999;
 }
 
